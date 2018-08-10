@@ -1,0 +1,13 @@
+{
+  "name": "battery-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "battery generate -d ./input -o ./styles"
+  },
+  "devDependencies": {
+    "@battery/cli": "^0.0.3"
+  }
+}
