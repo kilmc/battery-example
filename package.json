@@ -5,9 +5,17 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "battery generate -d ./input -o ./styles"
+    "build": "webpack --config ./webpack.config.js",
+    "watch": "webpack --watch --config ./webpack.config.js"
   },
   "devDependencies": {
-    "@battery/cli": "^0.0.3"
+    "@battery/cli": "^0.0.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }

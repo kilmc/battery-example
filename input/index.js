@@ -1,3 +1,5 @@
+import Component from './Component';
+
 const NavLink = ({ active, children }) => {
   const classes = styles(
     'white fz18px mr1',
@@ -19,6 +21,7 @@ const Header = () => (
 const Content = () => (
   <section className='bg-pink_30 flex-auto p3'>
     <h2>A bunch of nice content</h2>
+    <Component />
   </section>
 );
 const Footer = () => (
